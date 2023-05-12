@@ -1,1 +1,48 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  height: 300px;
+  width: 200px;
+  border: 1.5px solid black;
+  border-radius: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 24px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 24px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 24px 5px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+}
+
+#number {
+  font-size: 100px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.top,
+.bottom {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.top {
+  margin-right: 130px;
+}
+
+.bottom {
+  margin-left: 130px;
+}
+
+.btn {
+  margin-top: 25px;
+}
+
+body {
+  background-image: url("https://img.freepik.com/premium-photo/green-felt-background-texture-poker-casino-table_434420-1498.jpg");
+  background-size: cover;
+}
+
+.container-fluid {
+  margin: auto;
+  margin-top: 250px;
+}

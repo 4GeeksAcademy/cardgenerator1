@@ -16,7 +16,7 @@ function button() {
   });
 }
 let cardGenerator = () => {
-  let randomSuit = [":diamonds:", ":clubs:", ":hearts:", ":spades:"];
+  let randomSuit = ["♦️", "♣️", "❤️", "♠️"];
   let randomNumber = [
     "2",
     "3",
@@ -34,12 +34,14 @@ let cardGenerator = () => {
   ];
   let suit = randomSuit[Math.floor(Math.random() * randomSuit.length)];
   let number = randomNumber[Math.floor(Math.random() * randomNumber.length)];
-  if (suit == ":hearts:" || suit == ":diamonds:") {
-    document.querySelector("#icon").style.color = "red";
+  if (suit == "❤️" || suit == "♦️") {
+    document.querySelector(".top").style.color = "red";
+    document.querySelector(".bottom").style.color = "red";
   } else {
-    document.querySelector("#icon").style.color = "black";
+    document.querySelector(".top").style.color = "black";
+    document.querySelector(".bottom").style.color = "black";
   }
-  document.querySelector("#top").innerHTML = suit;
+  document.querySelector(".top").innerHTML = suit;
   document.querySelector("#number").innerHTML = number;
-  document.querySelector("#bottom").innerHTML = suit;
+  document.querySelector(".bottom").innerHTML = suit;
 };
